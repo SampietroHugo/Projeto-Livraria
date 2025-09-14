@@ -1,9 +1,20 @@
 #topo {
     text-align: center;
+    outline: 5px inset black;
+    background-color: #27058e;
+    color: white;
 }
 
 #menu a {
     text-decoration: none;
+}
+#menu li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.destaques li{
+    list-style-type: none;
 }
 
 .destaques h2 {
