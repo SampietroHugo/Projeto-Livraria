@@ -1,19 +1,45 @@
-#topo {
-    text-align: center;
-    outline: 5px inset black;
-    background-color: #27058e;
-    color: white;
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+#topo {
+    background: linear-gradient(135deg, #dc143c, #ff4500);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#topo h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#topo h2{
+    font-weight: 300;
+    font-size: 18px;
+}
+
 
 #menu a {
     text-decoration: none;
 }
-#menu li{
+
+#menu li {
     list-style-type: none;
     display: inline-block;
 }
 
-.destaques li{
+.destaques li {
     list-style-type: none;
 }
 
