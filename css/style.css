@@ -12,7 +12,10 @@ body {
 }
 
 #topo {
-    background: linear-gradient(135deg, #dc143c, #ff4500);
+    background: linear-gradient(to right,
+            #001e00,
+            #003300,
+            #004d1a);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -32,7 +35,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #b22222;
+    background-color: #011f01;
     padding: 10px;
 }
 
@@ -62,8 +65,8 @@ body {
 .destaques h2 {
     font-size: 34px;
     margin-bottom: 20px;
-    color: #560707;
-    border-bottom: 3px solid #e63946;
+    color: #011f01;
+    border-bottom: 3px solid #058828;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -100,40 +103,21 @@ body {
 .destaques a {
     display: inline-block;
     font-weight: bold;
-    color: #560707;
+    color: #011f01;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .destaques a:hover {
-    color: #e63946
+    color: #ff8503
 }
 
 #rodape {
-    background-color: #b22222;
+    background-color: #011f01;
     color: #ffffff;
     text-align: center;
-    padding: 20px;
+    padding: 8px;
     margin-top: 40px;
-}
-
-#rodape ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 10px;
-}
-
-#rodape a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#rodape a:hover {
-    color: #ff8503
 }
 
 #rodape p {
