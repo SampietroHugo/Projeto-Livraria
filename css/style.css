@@ -9,7 +9,6 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-
 }
 
 #topo {
@@ -19,53 +18,125 @@ body {
     padding: 40px 20px;
 }
 
-#topo h1{
+#topo h1 {
     margin-bottom: 10px;
     font-size: 40px;
 }
 
-#topo h2{
+#topo h2 {
     font-weight: 300;
     font-size: 18px;
 }
 
+#menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #b22222;
+    padding: 10px;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
 
 #menu a {
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-#menu li {
-    list-style-type: none;
-    display: inline-block;
+#menu a:hover {
+    color: #ff8503
 }
 
-.destaques li {
-    list-style-type: none;
+.destaques {
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .destaques h2 {
-    color: #003cffd5;
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #560707;
+    border-bottom: 3px solid #e63946;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.destaques ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.destaques li {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.destaques li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px #00000033;
 }
 
 .destaques img {
     width: 150px;
     height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .destaques a {
+    display: inline-block;
+    font-weight: bold;
+    color: #560707;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.destaques a:hover {
+    color: #e63946
+}
+
+#rodape {
+    background-color: #b22222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#rodape ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+#rodape a {
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-.sobre h3 {
-    color: #ff00009f;
+#rodape a:hover {
+    color: #ff8503
 }
 
-#produtos tr,
-#produtos th,
-#produtos td,
-#produtos {
-    border: 2px solid black;
-    border-collapse: collapse;
-    text-align: center;
+#rodape p {
+    font-size: 12px;
+    opacity: 0.8;
 }
