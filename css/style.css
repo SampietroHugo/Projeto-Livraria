@@ -5,13 +5,17 @@
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
 
-#topo {
+.topo {
     background: linear-gradient(to right,
             #001e00,
             #003300,
@@ -21,12 +25,12 @@ body {
     padding: 40px 20px;
 }
 
-#topo h1 {
+.topo h1 {
     margin-bottom: 10px;
     font-size: 40px;
 }
 
-#topo h2 {
+.topo h2 {
     font-weight: 300;
     font-size: 18px;
 }
@@ -112,15 +116,55 @@ body {
     color: #ff8503
 }
 
-#rodape {
+.rodape {
     background-color: #011f01;
     color: #ffffff;
     text-align: center;
     padding: 8px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-#rodape p {
+.rodape p {
     font-size: 12px;
     opacity: 0.8;
+}
+
+#produtos {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px #0000001a;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#produtos thead {
+    background: #22571d;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#produtos th,
+#produtos td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#produtos tbody tr:nth-child(even) {
+    background-color: #ceebce;
+}
+
+#produtos tbody tr:hover {
+    background: #94c692;
+    transition: 0.3s;
+}
+
+#produtos tfoot td {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #22571d;
+
 }
