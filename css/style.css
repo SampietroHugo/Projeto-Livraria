@@ -168,3 +168,79 @@ body {
     background-color: #22571d;
 
 }
+
+#promocao {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#promocao ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#promocao li {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px #0000001a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#promocao li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px #00000033;
+}
+
+#promocao img {
+    width: 150px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#promocao a {
+    display: inline-block;
+    font-weight: bold;
+    color: #011f01;
+    text-decoration: none;
+}
+
+.precoAntigo {
+    display: block;
+    color: #2c2a2a;
+    font-size: 14px;
+    text-decoration: line-through red;
+}
+
+.precoNovo {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#promocao h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #011f01;
+    border-bottom: 3px solid #058828;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.titulo {
+    margin-bottom: 8px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    line-height: 1.1;
+    padding: 0 6px;
+}
