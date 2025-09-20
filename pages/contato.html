@@ -9,44 +9,58 @@
 </head>
 
 <body>
-    <form>
-        <fieldset>
-            <legend>Contate-nos</legend>
-            <label>Nome:</label> <br>
-            <input type="text" placeholder="Digite seu nome completo" required>
-            <br><br>
+    <div class="topo" id="irTopoContato">
+        <h1>Livraria John & Paul</h1>
+        <h2>Livros novos e usados com os melhores preços para você</h2>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="../Index.html">Início</a></li>
+            <li><a href="../pages/produtos.html">Livros</a></li>
+            <li><a href="../pages/promocao.html">Promoções</a></li>
+            <li><a href="../pages/sobre.html">John & Paul</a></li>
+            <li><a href="#irTopoContato">Contate-nos</a></li>
+        </ul>
+    </div <form>
+    <fieldset>
+        <legend>Contate-nos</legend>
+        <label>Nome:</label> <br>
+        <input type="text" placeholder="Digite seu nome completo" required>
+        <br><br>
 
-            <label>E-mail:</label> <br>
-            <input type="email" placeholder="exemplo@email.com" required>
-            <br><br>
+        <label>E-mail:</label> <br>
+        <input type="email" placeholder="exemplo@email.com" required>
+        <br><br>
 
-            <label>Telefone:</label> <br>
-            <input type="tel" placeholder="(99) 99999-9999" required>
-            <br><br>
+        <label>Telefone:</label> <br>
+        <input type="tel" placeholder="(99) 99999-9999" required>
+        <br><br>
 
-            <label for="assunto">Assunto:</label> <br>
-            <select name="assunto" id="assunto">
-                <option selected disabled value="Selecione">Selecione --</option>
-                <option value="trocas">Trocas</option>
-                <option value="atendimento">Atendimento</option>
-                <option value="comercial">Comercial</option>
-                <option value="outros">Outros</option>
-            </select>
-            <br><br>
+        <label for="assunto">Assunto:</label> <br>
+        <select name="assunto" id="assunto">
+            <option selected disabled value="Selecione">Selecione --</option>
+            <option value="trocas">Trocas</option>
+            <option value="atendimento">Atendimento</option>
+            <option value="comercial">Comercial</option>
+            <option value="outros">Outros</option>
+        </select>
+        <br><br>
 
-            <label for="mensagem">Mensagem:</label> <br>
-            <textarea name="mensagem" id="mensagem"></textarea>
-            <br><br>
+        <label for="mensagem">Mensagem:</label> <br>
+        <textarea name="mensagem" id="mensagem"></textarea>
+        <br><br>
 
-            <input id="info" type="checkbox">
-            <label for="info">Desejo receber informações sobre a Livraria John e Paul</label>
-            <br><br>
+        <input id="info" type="checkbox">
+        <label for="info">Desejo receber informações sobre a Livraria John e Paul</label>
+        <br><br>
 
-            <input type="submit" value="Enviar">
-            <input type="submit" value="Resetar">
-        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="submit" value="Resetar">
+    </fieldset>
     </form>
-    <p><a href="../Index.html">Voltar para a página inicial</a></p>
+    <div class="rodape">
+        <p>2014. Livraria John & Paul - Todos os direitos reservados</p>
+    </div>
 </body>
 
 </html>
