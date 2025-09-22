@@ -304,23 +304,103 @@ body {
     box-shadow: 0 6px 15px #0000001a;
 }
 
-.sobre h3{
-    font-size: 1.6em;
+.sobre h3 {
+    font-size: 25.6px;
     color: #437841;
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.sobre p{
-    font-size: 1.1em;
+.sobre p {
+    font-size: 17.6px;
     margin-bottom: 20px;
 }
 
-.sobre ol{
+.sobre ol {
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
 .sobre ol li {
     font-weight: 500;
+}
+
+#formulario {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #011f01;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 8px #0000001a;
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #011f01;
+    padding: 0 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textearea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #011f01;
+    outline: none;
+    box-shadow: 0px 0px 5px #437841;
+}
+
+#info {
+    margin-right: 6px
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+input[type="submit"][value="Enviar"] {
+    background-color: #011f01;
+    color: #fff;
+}
+
+input[type="submit"][value="Enviar"]:hover {
+    background: #437841;
+}
+
+input[type="Submit"][value="Resetar"] {
+    background: #ccc;
+    color: #333;
+}
+
+input[type="submit"][value="Resetar"]:hover {
+    background: #999;
 }
